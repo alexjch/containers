@@ -18,7 +18,7 @@ Run container in background with current working directory mapped to `/workdir` 
 # Start comtainer in background.
 podman run -d --security-opt label=disable --name=whiperx-container --rm -it -v $(pwd):/workdir \
    --workdir=/workdir localhost/whisperx
- 
+
 # Generate transcript.
 podman exec -it whiperx-container /opt/.venv/bin/whisperx --compute_type int8 <audio file>
 ```

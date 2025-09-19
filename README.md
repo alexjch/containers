@@ -2,4 +2,4 @@
 
 Collection of containerized environments for development and build tasks.
 
-## [whisperx](./whisperx/README.md)
+## [whisperx](./whisperX/README.md)
