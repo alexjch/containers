@@ -1,0 +1,14 @@
+FROM registry.fedoraproject.org/fedora:43
+
+RUN dnf install -y \
+	boost-devel \
+	eigen3-devel \
+	gcc \
+	gcc-c++ \
+	git \
+	gtest-devel \
+	meson \
+	zlib-devel \
+	libzstd-devel && \
+	dnf clean all
+
